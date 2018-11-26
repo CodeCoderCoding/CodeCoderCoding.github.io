@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CodeCoderCoding</title>
+  
+  <subtitle>CodeCoderCoding</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://codecodercoding.github.io/"/>
+  <updated>2018-11-26T15:01:40.442Z</updated>
+  <id>https://codecodercoding.github.io/</id>
+  
+  <author>
+    <name>CodeCoderCoding</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test4</title>
+    <link href="https://codecodercoding.github.io/2018/11/26/test4/"/>
+    <id>https://codecodercoding.github.io/2018/11/26/test4/</id>
+    <published>2018-11-26T15:01:00.000Z</published>
+    <updated>2018-11-26T15:01:40.442Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ceshi"><a href="#ceshi" class="headerlink" title="ceshi"></a>ceshi</h1><h2 id="test"><a href="#test" class="headerlink" title="test"></a>test</h2><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;ceshi&quot;&gt;&lt;a href=&quot;#ceshi&quot; class=&quot;headerlink&quot; title=&quot;ceshi&quot;&gt;&lt;/a&gt;ceshi&lt;/h1&gt;&lt;h2 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;
+      
+    
+    </summary>
+    
+      <category term="Hexo2测试" scheme="https://codecodercoding.github.io/categories/Hexo2%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="标签一" scheme="https://codecodercoding.github.io/tags/%E6%A0%87%E7%AD%BE%E4%B8%80/"/>
+    
+      <category term="标签二" scheme="https://codecodercoding.github.io/tags/%E6%A0%87%E7%AD%BE%E4%BA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test3</title>
+    <link href="https://codecodercoding.github.io/2018/11/26/test3/"/>
+    <id>https://codecodercoding.github.io/2018/11/26/test3/</id>
+    <published>2018-11-26T14:45:03.000Z</published>
+    <updated>2018-11-26T14:46:02.775Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="test3"><a href="#test3" class="headerlink" title="test3"></a>test3</h1><h2 id="test3-1"><a href="#test3-1" class="headerlink" title="test3"></a>test3</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;test3&quot;&gt;&lt;a href=&quot;#test3&quot; class=&quot;headerlink&quot; title=&quot;test3&quot;&gt;&lt;/a&gt;test3&lt;/h1&gt;&lt;h2 id=&quot;test3-1&quot;&gt;&lt;a href=&quot;#test3-1&quot; class=&quot;headerlink&quot; title=
+      
+    
+    </summary>
+    
+      <category term="test3" scheme="https://codecodercoding.github.io/categories/test3/"/>
+    
+    
+      <category term="test3" scheme="https://codecodercoding.github.io/tags/test3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test2</title>
+    <link href="https://codecodercoding.github.io/2018/11/26/test2/"/>
+    <id>https://codecodercoding.github.io/2018/11/26/test2/</id>
+    <published>2018-11-26T14:19:13.000Z</published>
+    <updated>2018-11-26T14:19:13.957Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test1</title>
+    <link href="https://codecodercoding.github.io/2018/11/26/test1/"/>
+    <id>https://codecodercoding.github.io/2018/11/26/test1/</id>
+    <published>2018-11-26T13:57:12.000Z</published>
+    <updated>2018-11-26T13:57:32.818Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h1><ul><li>test1</li><li>test1</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;test1&quot;&gt;&lt;a href=&quot;#test1&quot; class=&quot;headerlink&quot; title=&quot;test1&quot;&gt;&lt;/a&gt;test1&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;test1&lt;/li&gt;
+&lt;li&gt;test1&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://codecodercoding.github.io/2018/11/26/test/"/>
+    <id>https://codecodercoding.github.io/2018/11/26/test/</id>
+    <published>2018-11-26T12:45:19.000Z</published>
+    <updated>2018-11-26T14:55:12.535Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><ul><li>test1</li><li>test2</li><li>test3</li><li>test4</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;test1&lt;/li&gt;
+&lt;li&gt;test2&lt;/li&gt;
+&lt;li&gt;test3&lt;/li&gt;
+&lt;li&gt;test4&lt;/li&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Hexo测试" scheme="https://codecodercoding.github.io/categories/Hexo%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="标签一" scheme="https://codecodercoding.github.io/tags/%E6%A0%87%E7%AD%BE%E4%B8%80/"/>
+    
+      <category term="标签二" scheme="https://codecodercoding.github.io/tags/%E6%A0%87%E7%AD%BE%E4%BA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>postname</title>
+    <link href="https://codecodercoding.github.io/2018/11/16/postname/"/>
+    <id>https://codecodercoding.github.io/2018/11/16/postname/</id>
+    <published>2018-11-16T13:58:42.000Z</published>
+    <updated>2018-11-16T14:00:59.278Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello World</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hello World&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://codecodercoding.github.io/2018/10/31/hello-world/"/>
+    <id>https://codecodercoding.github.io/2018/10/31/hello-world/</id>
+    <published>2018-10-31T03:31:31.497Z</published>
+    <updated>2018-11-26T12:38:16.082Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+      <category term="hello world" scheme="https://codecodercoding.github.io/tags/hello-world/"/>
+    
+  </entry>
+  
+</feed>

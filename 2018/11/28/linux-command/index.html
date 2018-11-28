@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>linux命令 | CodeCoderCoding | CodeCoderCoding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="linux,命令">
+    <meta name="description" content="系统显示系统信息arch 显示机器的处理器架构(1)uname -m 显示机器的处理器架构(2)uname -r 显示正在使用的内核版本dmidecode -q 显示硬件系统部件 - (SMBIOS / DMI)hdparm -i /dev/hda 罗列一个磁盘的架构特性hdparm -tT /dev/sda 在磁盘上执行测试性读取操作cat /proc/cpuinfo 显示CPU info的信息">
+<meta name="keywords" content="linux,命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux命令">
+<meta property="og:url" content="https://codecodercoding.github.io/2018/11/28/linux-command/index.html">
+<meta property="og:site_name" content="CodeCoderCoding">
+<meta property="og:description" content="系统显示系统信息arch 显示机器的处理器架构(1)uname -m 显示机器的处理器架构(2)uname -r 显示正在使用的内核版本dmidecode -q 显示硬件系统部件 - (SMBIOS / DMI)hdparm -i /dev/hda 罗列一个磁盘的架构特性hdparm -tT /dev/sda 在磁盘上执行测试性读取操作cat /proc/cpuinfo 显示CPU info的信息">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-28T16:14:31.866Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux命令">
+<meta name="twitter:description" content="系统显示系统信息arch 显示机器的处理器架构(1)uname -m 显示机器的处理器架构(2)uname -r 显示正在使用的内核版本dmidecode -q 显示硬件系统部件 - (SMBIOS / DMI)hdparm -i /dev/hda 罗列一个磁盘的架构特性hdparm -tT /dev/sda 在磁盘上执行测试性读取操作cat /proc/cpuinfo 显示CPU info的信息">
+    
+        <link rel="alternate" type="application/atom+xml" title="CodeCoderCoding" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/background.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/profilePhoto.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">CodeCoderCoding</h5>
+          <a href="mailto:yuzh4006@163.com" title="yuzh4006@163.com" class="mail">yuzh4006@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/">
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/">
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/codecodercoding" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom">
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">linux命令</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">linux命令</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-11-28T15:20:13.000Z" itemprop="datePublished" class="page-time">
+  2018-11-28
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#系统"><span class="post-toc-number">1.</span> <span class="post-toc-text">系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#显示系统信息"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">显示系统信息</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#arch-显示机器的处理器架构-1"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">arch 显示机器的处理器架构(1)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#uname-m-显示机器的处理器架构-2"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">uname -m 显示机器的处理器架构(2)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#uname-r-显示正在使用的内核版本"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">uname -r 显示正在使用的内核版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#dmidecode-q-显示硬件系统部件-SMBIOS-DMI"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">dmidecode -q 显示硬件系统部件 - (SMBIOS / DMI)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hdparm-i-dev-hda-罗列一个磁盘的架构特性"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">hdparm -i /dev/hda 罗列一个磁盘的架构特性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hdparm-tT-dev-sda-在磁盘上执行测试性读取操作"><span class="post-toc-number">1.1.6.</span> <span class="post-toc-text">hdparm -tT /dev/sda 在磁盘上执行测试性读取操作</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cat-proc-cpuinfo-显示CPU-info的信息"><span class="post-toc-number">1.1.7.</span> <span class="post-toc-text">cat /proc/cpuinfo 显示CPU info的信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cat-proc-interrupts-显示中断"><span class="post-toc-number">1.1.8.</span> <span class="post-toc-text">cat /proc/interrupts 显示中断</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cat-proc-meminfo-校验内存使用"><span class="post-toc-number">1.1.9.</span> <span class="post-toc-text">cat /proc/meminfo 校验内存使用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cat-proc-swaps-显示哪些swap被使用"><span class="post-toc-number">1.1.10.</span> <span class="post-toc-text">cat /proc/swaps 显示哪些swap被使用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cat-proc-version-显示内核的版本"><span class="post-toc-number">1.1.11.</span> <span class="post-toc-text">cat /proc/version 显示内核的版本</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文件-目录"><span class="post-toc-number">2.</span> <span class="post-toc-text">文件/目录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文件和目录"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">文件和目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文件权限"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">文件权限</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文件搜索"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">文件搜索</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-linux-command" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">linux命令</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-11-28 23:20:13" datetime="2018-11-28T15:20:13.000Z" itemprop="datePublished">2018-11-28</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h1><h2 id="显示系统信息"><a href="#显示系统信息" class="headerlink" title="显示系统信息"></a>显示系统信息</h2><h3 id="arch-显示机器的处理器架构-1"><a href="#arch-显示机器的处理器架构-1" class="headerlink" title="arch 显示机器的处理器架构(1)"></a>arch 显示机器的处理器架构(1)</h3><h3 id="uname-m-显示机器的处理器架构-2"><a href="#uname-m-显示机器的处理器架构-2" class="headerlink" title="uname -m 显示机器的处理器架构(2)"></a>uname -m 显示机器的处理器架构(2)</h3><h3 id="uname-r-显示正在使用的内核版本"><a href="#uname-r-显示正在使用的内核版本" class="headerlink" title="uname -r 显示正在使用的内核版本"></a>uname -r 显示正在使用的内核版本</h3><h3 id="dmidecode-q-显示硬件系统部件-SMBIOS-DMI"><a href="#dmidecode-q-显示硬件系统部件-SMBIOS-DMI" class="headerlink" title="dmidecode -q 显示硬件系统部件 - (SMBIOS / DMI)"></a>dmidecode -q 显示硬件系统部件 - (SMBIOS / DMI)</h3><h3 id="hdparm-i-dev-hda-罗列一个磁盘的架构特性"><a href="#hdparm-i-dev-hda-罗列一个磁盘的架构特性" class="headerlink" title="hdparm -i /dev/hda 罗列一个磁盘的架构特性"></a>hdparm -i /dev/hda 罗列一个磁盘的架构特性</h3><h3 id="hdparm-tT-dev-sda-在磁盘上执行测试性读取操作"><a href="#hdparm-tT-dev-sda-在磁盘上执行测试性读取操作" class="headerlink" title="hdparm -tT /dev/sda 在磁盘上执行测试性读取操作"></a>hdparm -tT /dev/sda 在磁盘上执行测试性读取操作</h3><h3 id="cat-proc-cpuinfo-显示CPU-info的信息"><a href="#cat-proc-cpuinfo-显示CPU-info的信息" class="headerlink" title="cat /proc/cpuinfo 显示CPU info的信息"></a>cat /proc/cpuinfo 显示CPU info的信息</h3><h3 id="cat-proc-interrupts-显示中断"><a href="#cat-proc-interrupts-显示中断" class="headerlink" title="cat /proc/interrupts 显示中断"></a>cat /proc/interrupts 显示中断</h3><h3 id="cat-proc-meminfo-校验内存使用"><a href="#cat-proc-meminfo-校验内存使用" class="headerlink" title="cat /proc/meminfo 校验内存使用"></a>cat /proc/meminfo 校验内存使用</h3><h3 id="cat-proc-swaps-显示哪些swap被使用"><a href="#cat-proc-swaps-显示哪些swap被使用" class="headerlink" title="cat /proc/swaps 显示哪些swap被使用"></a>cat /proc/swaps 显示哪些swap被使用</h3><h3 id="cat-proc-version-显示内核的版本"><a href="#cat-proc-version-显示内核的版本" class="headerlink" title="cat /proc/version 显示内核的版本"></a>cat /proc/version 显示内核的版本</h3><p>cat /proc/net/dev 显示网络适配器及统计<br>cat /proc/mounts 显示已加载的文件系统<br>lspci -tv 罗列 PCI 设备<br>lsusb -tv 显示 USB 设备<br>date 显示系统日期<br>cal 2007 显示2007年的日历表<br>date 041217002007.00 设置日期和时间 - 月日时分年.秒<br>clock -w 将时间修改保存到 BIOS</p>
+<h1 id="文件-目录"><a href="#文件-目录" class="headerlink" title="文件/目录"></a>文件/目录</h1><h2 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h2><p>cd /home 进入 ‘/ home’ 目录’<br>cd .. 返回上一级目录<br>cd ../.. 返回上两级目录<br>cd 进入个人的主目录<br>cd ~user1 进入个人的主目录<br>cd - 返回上次所在的目录<br>pwd 显示工作路径<br>ls 查看目录中的文件<br>ls -F 查看目录中的文件<br>ls -l 显示文件和目录的详细资料<br>ls -a 显示隐藏文件<br>ls <em>[0-9]</em> 显示包含数字的文件名和目录名<br>tree 显示文件和目录由根目录开始的树形结构(1)<br>lstree 显示文件和目录由根目录开始的树形结构(2)<br>mkdir dir1 创建一个叫做 ‘dir1’ 的目录’<br>mkdir dir1 dir2 同时创建两个目录<br>mkdir -p /tmp/dir1/dir2 创建一个目录树<br>rm -f file1 删除一个叫做 ‘file1’ 的文件’<br>rmdir dir1 删除一个叫做 ‘dir1’ 的目录’<br>rm -rf dir1 删除一个叫做 ‘dir1’ 的目录并同时删除其内容<br>rm -rf dir1 dir2 同时删除两个目录及它们的内容<br>mv dir1 new_dir 重命名/移动 一个目录<br>cp file1 file2 复制一个文件<br>cp dir/* . 复制一个目录下的所有文件到当前工作目录<br>cp -a /tmp/dir1 . 复制一个目录到当前工作目录<br>cp -a dir1 dir2 复制一个目录<br>ln -s file1 lnk1 创建一个指向文件或目录的软链接<br>ln file1 lnk1 创建一个指向文件或目录的物理链接<br>touch -t 0712250000 file1 修改一个文件或目录的时间戳 - (YYMMDDhhmm)<br>file file1 outputs the mime type of the file as text<br>iconv -l 列出已知的编码</p>
+<h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><p>ls -lh 显示权限<br>ls /tmp | pr -T5 -W$COLUMNS 将终端划分成5栏显示<br>chmod ugo+rwx directory1 设置目录的所有人(u)、群组(g)以及其他人(o)以读（r ）、写(w)和执行(x)的权限<br>chmod go-rwx directory1 删除群组(g)与其他人(o)对目录的读写执行权限<br>chown user1 file1 改变一个文件的所有人属性<br>chown -R user1 directory1 改变一个目录的所有人属性并同时改变改目录下所有文件的属性<br>chgrp group1 file1 改变文件的群组<br>chown user1:group1 file1 改变一个文件的所有人和群组属性<br>find / -perm -u+s 罗列一个系统中所有使用了SUID控制的文件<br>chmod u+s /bin/file1 设置一个二进制文件的 SUID 位 - 运行该文件的用户也被赋予和所有者同样的权限<br>chmod u-s /bin/file1 禁用一个二进制文件的 SUID位<br>chmod g+s /home/public 设置一个目录的SGID 位 - 类似SUID ，不过这是针对目录的<br>chmod g-s /home/public 禁用一个目录的 SGID 位<br>chmod o+t /home/public 设置一个文件的 STIKY 位 - 只允许合法所有人删除文件<br>chmod o-t /home/public 禁用一个目录的 STIKY 位</p>
+<h2 id="文件搜索"><a href="#文件搜索" class="headerlink" title="文件搜索"></a>文件搜索</h2><p>find / -name file1 从 ‘/‘ 开始进入根文件系统搜索文件和目录<br>find / -user user1 搜索属于用户 ‘user1’ 的文件和目录<br>find /home/user1 -name *.bin 在目录 ‘/ home/user1’ 中搜索带有’.bin’ 结尾的文件<br>find /usr/bin -type f -atime +100 搜索在过去100天内未被使用过的执行文件<br>find /usr/bin -type f -mtime -10 搜索在10天内被创建或者修改过的文件<br>find / -name *.rpm -exec chmod 755 ‘{}’ \; 搜索以 ‘.rpm’ 结尾的文件并定义其权限<br>find / -xdev -name *.rpm 搜索以 ‘.rpm’ 结尾的文件，忽略光驱、捷盘等可移动设备<br>locate *.ps 寻找以 ‘.ps’ 结尾的文件 - 先运行 ‘updatedb’ 命令<br>whereis halt 显示一个二进制文件、源码或man的位置<br>which halt 显示一个二进制文件或可执行文件的完整路径</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-11-28T16:14:31.866Z" itemprop="dateUpdated">2018-11-29 00:14:31</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/11/28/linux-command/" target="_blank" rel="external">https://codecodercoding.github.io/2018/11/28/linux-command/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://codecodercoding.github.io">
+            <img src="/img/profilePhoto.jpg" alt="CodeCoderCoding">
+            CodeCoderCoding
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令/">命令</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://codecodercoding.github.io/2018/11/28/linux-command/&title=《linux命令》 — CodeCoderCoding&pic=https://codecodercoding.github.io/img/profilePhoto.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://codecodercoding.github.io/2018/11/28/linux-command/&title=《linux命令》 — CodeCoderCoding&source=CodeCoderCoding" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://codecodercoding.github.io/2018/11/28/linux-command/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《linux命令》 — CodeCoderCoding&url=https://codecodercoding.github.io/2018/11/28/linux-command/&via=https://codecodercoding.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://codecodercoding.github.io/2018/11/28/linux-command/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/11/28/linux-user/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">linux用户</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/11/28/linux-file-directory/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">linux基础-文件与目录</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>CodeCoderCoding &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://codecodercoding.github.io/2018/11/28/linux-command/&title=《linux命令》 — CodeCoderCoding&pic=https://codecodercoding.github.io/img/profilePhoto.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://codecodercoding.github.io/2018/11/28/linux-command/&title=《linux命令》 — CodeCoderCoding&source=CodeCoderCoding" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://codecodercoding.github.io/2018/11/28/linux-command/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《linux命令》 — CodeCoderCoding&url=https://codecodercoding.github.io/2018/11/28/linux-command/&via=https://codecodercoding.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://codecodercoding.github.io/2018/11/28/linux-command/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://codecodercoding.github.io/2018/11/28/linux-command/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

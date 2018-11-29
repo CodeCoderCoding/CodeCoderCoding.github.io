@@ -21,18 +21,18 @@
     
     
     <meta name="keywords" content="Windows编程,基础概念">
-    <meta name="description" content="Windows程序基本概念 Windows数据类型 窗口 实例 资源 对象与句柄 图形设备接口 回调函数  事件驱动与消息机制 事件驱动 消息机制">
+    <meta name="description" content="Windows程序编写Windows程序如下两种方式： 调用Windows API方式应用程序通过调用Windows系统提供的程序接口(即Windows API)来实现相应的功能。 采用MFC方式MFC是由Microsoft提供的对Windows API封装后的类库，应用程序通过调用MFC类库实现相应的功能。 基本概念 Windows数据类型：Microsoft对一些C/C++的基本数据类型进行了">
 <meta name="keywords" content="Windows编程,基础概念">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows编程-基础讲解">
 <meta property="og:url" content="https://codecodercoding.github.io/2018/11/29/windows-1basics/index.html">
 <meta property="og:site_name" content="CodeCoderCoding">
-<meta property="og:description" content="Windows程序基本概念 Windows数据类型 窗口 实例 资源 对象与句柄 图形设备接口 回调函数  事件驱动与消息机制 事件驱动 消息机制">
+<meta property="og:description" content="Windows程序编写Windows程序如下两种方式： 调用Windows API方式应用程序通过调用Windows系统提供的程序接口(即Windows API)来实现相应的功能。 采用MFC方式MFC是由Microsoft提供的对Windows API封装后的类库，应用程序通过调用MFC类库实现相应的功能。 基本概念 Windows数据类型：Microsoft对一些C/C++的基本数据类型进行了">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-29T02:50:42.739Z">
+<meta property="og:updated_time" content="2018-11-29T03:13:11.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows编程-基础讲解">
-<meta name="twitter:description" content="Windows程序基本概念 Windows数据类型 窗口 实例 资源 对象与句柄 图形设备接口 回调函数  事件驱动与消息机制 事件驱动 消息机制">
+<meta name="twitter:description" content="Windows程序编写Windows程序如下两种方式： 调用Windows API方式应用程序通过调用Windows系统提供的程序接口(即Windows API)来实现相应的功能。 采用MFC方式MFC是由Microsoft提供的对Windows API封装后的类库，应用程序通过调用MFC类库实现相应的功能。 基本概念 Windows数据类型：Microsoft对一些C/C++的基本数据类型进行了">
     
         <link rel="alternate" type="application/atom+xml" title="CodeCoderCoding" href="/atom.xml">
     
@@ -165,7 +165,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Windows程序"><span class="post-toc-number">1.</span> <span class="post-toc-text">Windows程序</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基本概念"><span class="post-toc-number">2.</span> <span class="post-toc-text">基本概念</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#事件驱动与消息机制"><span class="post-toc-number">3.</span> <span class="post-toc-text">事件驱动与消息机制</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Windows程序"><span class="post-toc-number">1.</span> <span class="post-toc-text">Windows程序</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#调用Windows-API方式"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">调用Windows API方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#采用MFC方式"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">采用MFC方式</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基本概念"><span class="post-toc-number">2.</span> <span class="post-toc-text">基本概念</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#事件驱动与消息机制"><span class="post-toc-number">3.</span> <span class="post-toc-text">事件驱动与消息机制</span></a></li></ol>
         </nav>
     </aside>
 
@@ -188,9 +188,12 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="Windows程序"><a href="#Windows程序" class="headerlink" title="Windows程序"></a>Windows程序</h1><h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul>
-<li>Windows数据类型</li>
-<li>窗口</li>
+            <h1 id="Windows程序"><a href="#Windows程序" class="headerlink" title="Windows程序"></a><strong>Windows程序</strong></h1><p>编写Windows程序如下两种方式：</p>
+<h2 id="调用Windows-API方式"><a href="#调用Windows-API方式" class="headerlink" title="调用Windows API方式"></a>调用Windows API方式</h2><p>应用程序通过调用Windows系统提供的程序接口(即Windows API)来实现相应的功能。</p>
+<h2 id="采用MFC方式"><a href="#采用MFC方式" class="headerlink" title="采用MFC方式"></a>采用MFC方式</h2><p>MFC是由Microsoft提供的对Windows API封装后的类库，应用程序通过调用MFC类库实现相应的功能。</p>
+<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h1><ul>
+<li>Windows数据类型：Microsoft对一些C/C++的基本数据类型进行了封装，并定义了新的名称。</li>
+<li>窗口：窗口是Windows程序的基本操作单元，是应用程序与用户之间交互的接口环境。窗口的特性是由WNDCLASS结构体进行定义的，部分特性如：光标、图标、菜单、背景色。</li>
 <li>实例</li>
 <li>资源</li>
 <li>对象与句柄</li>
@@ -209,7 +212,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-11-29T02:50:42.739Z" itemprop="dateUpdated">2018-11-29 10:50:42</time>
+    最后更新时间：<time datetime="2018-11-29T03:13:11.089Z" itemprop="dateUpdated">2018-11-29 11:13:11</time>
 </span><br>
 
 

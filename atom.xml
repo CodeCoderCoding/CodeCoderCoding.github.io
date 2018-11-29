@@ -39,15 +39,16 @@
     <link href="https://codecodercoding.github.io/2018/11/29/windows-1basics/"/>
     <id>https://codecodercoding.github.io/2018/11/29/windows-1basics/</id>
     <published>2018-11-29T02:35:00.000Z</published>
-    <updated>2018-11-29T02:50:42.739Z</updated>
+    <updated>2018-11-29T03:13:11.089Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Windows程序"><a href="#Windows程序" class="headerlink" title="Windows程序"></a>Windows程序</h1><h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul><li>Windows数据类型</li><li>窗口</li><li>实例</li><li>资源</li><li>对象与句柄</li><li>图形设备接口</li><li>回调函数</li></ul><h1 id="事件驱动与消息机制"><a href="#事件驱动与消息机制" class="headerlink" title="事件驱动与消息机制"></a>事件驱动与消息机制</h1><ul><li>事件驱动</li><li>消息机制</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="Windows程序"><a href="#Windows程序" class="headerlink" title="Windows程序"></a><strong>Windows程序</strong></h1><p>编写Windows程序如下两种方式：</p><h2 id="调用Windows-API方式"><a href="#调用Windows-API方式" class="headerlink" title="调用Windows API方式"></a>调用Windows API方式</h2><p>应用程序通过调用Windows系统提供的程序接口(即Windows API)来实现相应的功能。</p><h2 id="采用MFC方式"><a href="#采用MFC方式" class="headerlink" title="采用MFC方式"></a>采用MFC方式</h2><p>MFC是由Microsoft提供的对Windows API封装后的类库，应用程序通过调用MFC类库实现相应的功能。</p><h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a><strong>基本概念</strong></h1><ul><li>Windows数据类型：Microsoft对一些C/C++的基本数据类型进行了封装，并定义了新的名称。</li><li>窗口：窗口是Windows程序的基本操作单元，是应用程序与用户之间交互的接口环境。窗口的特性是由WNDCLASS结构体进行定义的，部分特性如：光标、图标、菜单、背景色。</li><li>实例</li><li>资源</li><li>对象与句柄</li><li>图形设备接口</li><li>回调函数</li></ul><h1 id="事件驱动与消息机制"><a href="#事件驱动与消息机制" class="headerlink" title="事件驱动与消息机制"></a>事件驱动与消息机制</h1><ul><li>事件驱动</li><li>消息机制</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;Windows程序&quot;&gt;&lt;a href=&quot;#Windows程序&quot; class=&quot;headerlink&quot; title=&quot;Windows程序&quot;&gt;&lt;/a&gt;Windows程序&lt;/h1&gt;&lt;h1 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerli
+        &lt;h1 id=&quot;Windows程序&quot;&gt;&lt;a href=&quot;#Windows程序&quot; class=&quot;headerlink&quot; title=&quot;Windows程序&quot;&gt;&lt;/a&gt;&lt;strong&gt;Windows程序&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;编写Windows程序如下两种方式：&lt;/p&gt;
+&lt;h
       
     
     </summary>
